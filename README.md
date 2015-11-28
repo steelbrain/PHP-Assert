@@ -1,12 +1,14 @@
 PHP-Assert
 =========
 
-PHP-Assert contains a few of assert functions inspired from those of HHVM
+PHP-Assert contains a few of assert functions inspired from those of HHVM.
 
 #### API
 
 ```php
+// Throws an InvariantException with the message if clause is not true
 function invariant(bool $clause, string $message = ''){ }
+// Throws an InvariantException with the message
 function invariant_violation(string $message = ''){ }
 ```
 
