@@ -15,7 +15,7 @@ function invariant_violation(string $message = ''){ }
 #### Example
 
 ```php
-use steelbrain\assert;
+use steelbrain;
 $a = 'Something';
 $b = 'Something';
 invariant($a === $b, 'A and B are not equal');

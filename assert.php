@@ -1,5 +1,5 @@
 <?php
-namespace steelbrain\invariant;
+namespace steelbrain;
 use ErrorException;
 
 // Main Exception
