@@ -1,5 +1,5 @@
 <?php
-namespace steelbrain\assert;
+namespace steelbrain\invariant;
 use ErrorException;
 
 // Main Exception
@@ -10,11 +10,11 @@ class AssertException extends ErrorException {
 }
 
 // Helper methods
-function assert($clause, $message = '') {
+function invariant($clause, $message = '') {
   if (!$clause) {
     throw new AssertException($message);
   }
 }
-function assert_violation($message = '') {
+function invariant_violation($message = '') {
   throw new AssertException($message);
 }
